@@ -19,7 +19,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "styles": [
+              "src/assets/css/plugins/bootstrap.min.css",
+              "src/assets/css/plugins/snackbar.min.css",
+              "src/styles.css"
+            ],
             "scripts": [
               "src/assets/js/jquery.min.js",
               "src/assets/js/popper.min.js",
