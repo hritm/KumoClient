@@ -22,6 +22,17 @@
             "styles": [
               "src/assets/css/plugins/bootstrap.min.css",
               "src/assets/css/plugins/snackbar.min.css",
+              "src/assets/css/plugins/animation.css",
+              "src/assets/css/plugins/light-box.css",
+              "src/assets/css/plugins/ion.rangeSlider.min.css",
+              "src/assets/css/plugins/slick.css",
+              "src/assets/css/plugins/slick-theme.css",
+              "src/assets/css/plugins/themify.css",
+              "src/assets/css/plugins/line-icons.css",
+              "src/assets/css/plugins/iconfont.css",
+              "src/assets/css/plugins/font-awesome.css",
+              "src/assets/css/plugins/flaticon.css",
+              "src/assets/font/Jost/jost.css",
               "src/styles.css"
             ],
             "scripts": [
