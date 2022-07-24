@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-top-scroll',
-  templateUrl: './top-scroll.component.html',
-  styleUrls: ['./top-scroll.component.css'],
+  templateUrl: './top-scroll.component.html'
 })
-export class TopScrollComponent implements OnInit {
-  constructor() {}
+export class TopScrollComponent {
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
-  ngOnInit(): void {}
-
-  onEdit(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  scrollToTop(): void {
+    this.document
+      .getElementById('main-wrapper')
+      ?.scrollIntoView({ behavior: 'smooth' });
   }
 }

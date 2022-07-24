@@ -24,14 +24,18 @@ const routes: Routes = [
   },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent},
+  { path: 'blog', component: BlogComponent },
   { path: 'privacy', component: PrivacyComponent },
-  { path: 'faq', component: FAQComponent},
+  { path: 'faq', component: FAQComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+       scrollPositionRestoration: 'top'
+    })
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
